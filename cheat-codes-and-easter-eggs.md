@@ -11,7 +11,7 @@ To enter a cheat code, hold CTRL+SHIFT during a level and type it.
 * **getdown**: The mission succeeds when the player's vehicle is destroyed. All other vehicles on the map become hostile (unarmed vehicles will attempt to ram the player) and all mission objectives and event triggers are ignored. Notably, this allows the player to leave the mission area without failing the mission, permitting exploration.
 * **wiggleburger**: Applies a "double vision" effect that persists until the game is closed (screenshot below).
 
-    ![Wiggleburder.](images/img-wiggleburger.png)
+  ![Wiggleburder.](images/img-wiggleburger.png)
 
 ### Cheat Codes that Don't Work
 
@@ -41,6 +41,8 @@ Some commonly-reported cheat codes don't work.
 
 * When presented with the vehicle selection screen before the last story level, click on the helicopter in the top-left to use it.
 * While driving the bus, enter cockpit view (press F1) and look back (hold the down arrow key) to see a photo of the development team.
+
+  ![](images/img-dev-team.png)
 
 ## Miscellany
 
