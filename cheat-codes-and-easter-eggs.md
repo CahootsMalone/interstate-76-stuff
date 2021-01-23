@@ -5,9 +5,9 @@
 To enter a cheat code, hold CTRL+SHIFT during a level and type it.
 
 * **blflat**: Destroys the back left tire.
-* **brflat**: Destorys the back right tire.
+* **brflat**: Destroys the back right tire.
 * **flflat**: Destroys the front left tire.
-* **frflat**: Destorys the front right tire.
+* **frflat**: Destroys the front right tire.
 * **getdown**: The mission succeeds when the player's vehicle is destroyed. All other vehicles on the map become hostile (unarmed vehicles will attempt to ram the player) and all mission objectives and event triggers are ignored. Notably, this allows the player to leave the mission area without failing the mission, permitting exploration.
 * **wiggleburger**: Applies a "double vision" effect that persists until the game is closed (screenshot below).
 
