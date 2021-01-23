@@ -50,4 +50,4 @@ Some commonly-reported cheat codes don't work.
 ## TODO
 
 * Update to cover Nitro Pack, particularly the "hotair" and "thetruthishere" Rattler variant names that allow use of the hot air balloon and UFO, respectively.
-* I recall being able to drive the tractor (which appears as a civilian vehicle in a few levels) using a Rattler variant named "Farmer John" or something similar, but I've tried this (with and without spaces and backwards) and it doesn't work.
+* I recall being able to drive the tractor (which appears as a civilian vehicle in a few levels) using a Rattler variant named "Farmer John" or something similar, but I've tried this (with and without spaces and backwards) and it doesn't work. I also recall being able to "drive" an armadillo, but I have no recollection of the associated variant name ("ollidamra" doesn't work). Although it's been a while, I'm fairly sure these were supported by the game itself and didn't require hex editing.
