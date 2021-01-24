@@ -31,7 +31,7 @@ To get started immediately, jump to [the **Instructions** section](#instructions
 
 1. Download the `Interstate-76-GOG-Release.dxw` file contained in this repository by right-clicking [this link](Interstate-76-GOG-Release.dxw) and selecting "Save Link As...". This file contains DxWnd configuration information.
 1. In DxWnd, select *File > Import...* and import the `dxw` file you just downloaded. A new target will be created within DxWnd with the name "Interstate 76 (GOG Release)".
-    * If no target appears (this is rare but was reported once; the cause is unknown), create the target manually by following the steps in [the **DxWnd Target Configuration** section](#dxwnd-target-configuration), then jump to [the **Running Interstate '76** section](#running-interstate-'76).
+    * If no target appears (this is rare but was reported once; the cause is unknown), create the target manually by following the steps in [the **DxWnd Target Configuration** section](#dxwnd-target-configuration), then jump to [the **Running Interstate '76** section](#running-interstate-76).
 1. Right-click on the target and select *Modify*.
 1. If necessary, update the *Path* field to match the location of the Interstate '76 executable. Click *OK*.
 
