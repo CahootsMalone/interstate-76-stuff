@@ -23,11 +23,15 @@ To get started immediately, jump to [the **Instructions** section](#instructions
 
 1. Install the GOG release of Interstate '76.
 1. Identify the location of the Interstate '76 executable. The default is `C:/GOG Games/Interstate 76/i76.exe`.
-1. Download DxWnd (available [here](https://sourceforge.net/projects/dxwnd/)). Place the contents of its archive file in a convenient location (no installation is required). Run `dxwnd.exe`.
+1. Download DxWnd (available [here](https://sourceforge.net/projects/dxwnd/)). Place the contents of its archive file in a convenient location (no installation is required).
+    * You may require a program like [7-Zip](https://www.7-zip.org/) to extract the contents of the DxWnd archive file.
+1. Run `dxwnd.exe`.
 
     ![The DxWnd directory.](images/img-dxwnd-directory.png)
 
-1. Download [the `Interstate-76-GOG-Release.dxw` file](Interstate-76-GOG-Release.dxw) (it contains DxWnd configuration information). In DxWnd, select *File > Import...* and import the file. A new target will be created.
+1. Download the `Interstate-76-GOG-Release.dxw` file contained in this repository by right-clicking [this link](Interstate-76-GOG-Release.dxw) and selecting "Save Link As...". This file contains DxWnd configuration information.
+1. In DxWnd, select *File > Import...* and import the `dxw` file you just downloaded. A new target will be created within DxWnd with the name "Interstate 76 (GOG Release)".
+    * If no target appears (this is rare but was reported once; the cause is unknown), create the target manually by following the steps in [the **DxWnd Target Configuration** section](#dxwnd-target-configuration), then jump to [the **Running Interstate '76** section](#running-interstate-'76).
 1. Right-click on the target and select *Modify*.
 1. If necessary, update the *Path* field to match the location of the Interstate '76 executable. Click *OK*.
 
@@ -37,10 +41,24 @@ To get started immediately, jump to [the **Instructions** section](#instructions
 
 ### Running Interstate '76
 
+Every time you want to run Interstate '76, perform these steps.
+
 1. Open DxWnd.
 1. Double-click on the Interstate '76 target.
 1. DxWnd will prompt for adminstrator permissions and restart.
 1. Double-click on the Interstate '76 target again. The game should now run and will be limited to 20 frames per second.
+
+Alternatively:
+
+1. Right-click on the DxWnd executable (or a shortcut to it).
+1. Select "Run as administrator".
+1. Double-click on the Interstate '76 target.
+
+If you're using a shortcut to launch DxWnd, you can configure it to automatically run with administrator permissions as follows (this only needs to be done once):
+
+1. Right-click the DxWnd shortcut and select *Properties*.
+1. Select the *Shortcut* tab and click the *Advanced* button.
+1. Check *Run as administrator*, then click *OK* twice.
 
 ## Notes
 
@@ -75,7 +93,7 @@ Note that these steps were performed in version 2.05.61 of DxWnd; they may diffe
 1. Right-click on the new target and select *Modify*.
 1. Under the *Main* tab:
     * Set the name.
-    * Set the path (`C:\GOG Games\Interstate 76\i76.exe`).
+    * Set the path (`C:\GOG Games\Interstate 76\i76.exe` or wherever `i76.exe` is located on your computer).
     * In the *Generic* panel:
       * Uncheck *Run in window*. (The game won't run with this selected. It's possible additional configuration could resolve this.)
       * Check *Acquire admin caps*.
@@ -84,6 +102,8 @@ Note that these steps were performed in version 2.05.61 of DxWnd; they may diffe
     * In the *delay (msec)* field, enter 50 (50 ms gives 1000/50 = 20 frames per second).
 1. Under the *Video* tab:
     * In the *Window style* panel, select *default*. (The default value, *thick frame*, causes the game to stop receiving mouse input the second time a level is started; a window frame also appears when this happens.)
+1. Click *OK*.
+1. Select *File > Save*.
 
 ### Miscellaneous
 
