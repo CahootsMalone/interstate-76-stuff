@@ -90,7 +90,6 @@ Note that these steps were performed in version 2.05.61 of DxWnd; they may diffe
 
 1. Select *Options > Expert mode* (if not already enabled).
 1. Select *Edit > Add*.
-1. Right-click on the new target and select *Modify*.
 1. Under the *Main* tab:
     * Set the name.
     * Set the path (`C:\GOG Games\Interstate 76\i76.exe` or wherever `i76.exe` is located on your computer).
