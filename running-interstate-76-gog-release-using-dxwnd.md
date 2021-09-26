@@ -2,8 +2,6 @@
 
 This document describes a quick, simple way to get the GOG release of [Interstate '76](https://en.wikipedia.org/wiki/Interstate_%2776) running at an appropriate frame rate using DxWnd. This avoids major bugs that occur when the game runs at a high frame rate.
 
-*Update: as of 2021-09-26, this configuration no longer addresses all the problems described below; in particular, computer-controlled vehicles now exhibit erratic driving behaviour even when the frame rate is limited to 20 FPS. Other frame rate-sensitive logic (such as the behaviour of flame throwers) is still fixed. I haven't updated my Interstate '76 installation or my copy of DxWnd since writing this guide, so I suspect the change is attributable to Windows 10 updates. This may only be a problem on my machine, however, so I would encourage you to try this configuration yourself given how simple it is to set up. A quick way to check the AI's driving performance is to start the training mission from the main menu: if Groove's car bounces around and rapidly alternates between steering left and right during the introductory cutscene, the problem is present.*
-
 To get started immediately, jump to [the **Instructions** section](#instructions), below.
 
 ## Background
