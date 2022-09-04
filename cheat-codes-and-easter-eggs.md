@@ -49,7 +49,7 @@ Some commonly-reported cheat codes don't work.
 * During a level, press CTRL+ALT+X to make the player's vehicle explode.
 * To use a different vehicle during one of the story levels (which are normally limited to the Picard Piranha), create a vehicle variant, then go to the `ADDON` directory and rename its `*.vcf` file to `vppt##.vcf`, where `##` is between `01` and `17` and denotes the story level that should use the custom vehicle.
   * This works because vehicle configuration files in the `ADDON` directory take precedence over those contained the `I76.ZFS` file (see below).
-* Most game assets are stored in the `I76.ZFS` file within the Interstate '76 directory. Its contents can be extracted and decompressed using a program called UNZFS; instructions are available [here](https://interstate76.fandom.com/wiki/Tricks).
+* Most game assets are stored in the `I76.ZFS` file within the Interstate '76 directory. Its contents can be extracted and decompressed using a program called UNZFS; see [these notes](unzfs-info.md).
   * All the VCF files for vehicles that appear in story levels and scenarios are in the ZFS file. Placing a VCF with the same name in the `ADDON` folder will override the one in the ZFS file.
 
 ## TODO
