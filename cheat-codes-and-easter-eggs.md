@@ -15,7 +15,7 @@ To enter a cheat code, hold CTRL+SHIFT during a level and type it.
 
 ### Cheat Codes that Don't Work
 
-Some commonly-reported cheat codes don't work.
+Some commonly-reported cheat codes don't seem to work.
 
 * **freelance**: Plays one of Taurus' poems. Superfluous since there's a key that performs the same function (C).
 * **thirdnostril**: Increases radar targeting range.
@@ -38,6 +38,9 @@ Some commonly-reported cheat codes don't work.
     * Although well-armored, the tank is quite slow. Its unique cannon is powerful but difficult to aim due to the tank's limited speed.
   * **retpocileh**: The Huey helicopter.
     * In the GOG release, always crashes the game when first used. Subsequently the game will crash on the vehicle selection screen until the associated variant file is deleted.
+  * **hotair** (Nitro Pack): The hot air balloon.
+  * **thetruthisoutthere** (Nitro Pack): The UFO.
+    * This is a reference to the television show [The X-Files](https://en.wikipedia.org/wiki/The_X-Files); its protagonists frequently encounter strange events of an extraterrestrial nature.
 
 * When presented with the vehicle selection screen before the last story level, click on the helicopter in the top-left to use it.
 * While driving the bus, enter cockpit view (press F1) and look back (hold the down arrow key) to see a photo of the development team.
@@ -51,8 +54,3 @@ Some commonly-reported cheat codes don't work.
   * This works because vehicle configuration files in the `ADDON` directory take precedence over those contained the `I76.ZFS` file (see below).
 * Most game assets are stored in the `I76.ZFS` file within the Interstate '76 directory. Its contents can be extracted and decompressed using a program called UNZFS; see [these notes](unzfs-info.md).
   * All the VCF files for vehicles that appear in story levels and scenarios are in the ZFS file. Placing a VCF with the same name in the `ADDON` folder will override the one in the ZFS file.
-
-## TODO
-
-* Update to cover Nitro Pack, particularly the "hotair" and "thetruthishere" Rattler variant names that allow use of the hot air balloon and UFO, respectively.
-* I recall being able to drive the tractor (which appears as a civilian vehicle in a few levels) using a Rattler variant named "Farmer John" or something similar, but I've tried this (with and without spaces and backwards) and it doesn't work. I also recall being able to "drive" an armadillo, but I have no recollection of the associated variant name ("ollidamra" doesn't work). Although it's been a while, I'm fairly sure these were supported by the game itself and didn't require hex editing.
