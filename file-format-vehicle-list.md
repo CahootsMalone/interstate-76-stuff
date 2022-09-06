@@ -82,7 +82,7 @@ UFO | vxufo | 1
 
 The stationary weapons aren't worth adding because attempting to use them causes the game to crash (see [the **Problems** section](#problems)).
 
-The corresponding bytes to add the remaing vehicles to the end of `nitcar.def` are:
+The corresponding bytes to add the remaining vehicles to the end of `nitcar.def` are:
 
 ```
 24 00 00 00 01 00 00 00 01 00 00 00 76 64 69 6C 6C 6F 00 00 00 00 00 00 00 00 00 00 
