@@ -14,7 +14,7 @@ Note that the name of each VCF within a set starts with the set's base name (e.g
 
 The base name of a VCF set is used in the vehicle list files (described below) as the internal name of its corresponding vehicle, although nothing prevents the VCFs within a set from referring to different vehicle definition files (VDFs).
 
-*Incidentally, the ability of VCFs within a set to reference arbitrary VDFs is how the special Phaedra Rattler variants work: using a special variant name causes the game to replace the contents of a VCF that references the Rattler VDF with the contents of a VCF that references the VDF for a special vehicle, but doesn't change the name of the VCF (it still starts with `vfratlr1`, the Rattler base name), allowing it to be selected as a variant of the Rattler.*
+*Incidentally, the ability of VCFs within a set to reference arbitrary VDFs is how the special Phaedra Rattler variants work: using a special variant name causes the game to replace the contents of a VCF that references the Rattler VDF with the contents of a VCF that references the VDF for a special vehicle, but doesn't change the name of the VCF (it still starts with `vfratlr`, the Rattler base name), allowing it to be selected as a variant of the Rattler.*
 
 ## Vehicle Lists
 
@@ -23,7 +23,7 @@ The lists of vehicles available to the user are stored in `*.def` files in the m
 * Interstate '76 has a single list:
   * `i76car.def`: vehicles available to the user in all modes.
 * Nitro Pack has two lists:
-    * `nitcar.def`: vehicles available in Instant Melee mode. Contains 37 vehicles.
+    * `nitcar.def`: vehicles available in melee mode. Contains 37 vehicles.
     * `nitscar.def`: vehicles available for use in the scenarios. Contains 31 vehicles (six aren't available for some reason).
 
 By default, these lists don't include the special vehicles.
@@ -60,7 +60,7 @@ Notes:
     * Edge cases:
         * If set to a value that exceeds the total variant count, the last variant is repeated to fill the variant selection list.
         * If set to zero, the variant selection list is empty.
-        * In both cases, the total variant count is updated to match.
+        * In both cases, the total variant count is updated to match the next time the game is run.
 
 ## Special Vehicles
 
@@ -82,7 +82,7 @@ UFO | vxufo | 1
 
 The stationary weapons aren't worth adding because attempting to use them causes the game to crash (see [the **Problems** section](#problems)).
 
-The corresponding bytes to add the remaining vehicles to the end of `nitcar.def` are:
+When appended to `nitcar.def`, the following bytes add the remaining vehicles:
 
 ```
 24 00 00 00 01 00 00 00 01 00 00 00 76 64 69 6C 6C 6F 00 00 00 00 00 00 00 00 00 00 
@@ -102,7 +102,7 @@ The corresponding bytes to add the remaining vehicles to the end of `nitcar.def`
 2B 00 00 00 01 00 00 00 01 00 00 00 76 78 75 66 6F 00 00 00 00 00 00 00 00 00 00 00
 ```
 
-The number of vehicles at the start of the file also needs to be updated.
+The number of vehicles at the start of `nitcar.def` also needs to be updated.
 
 ## Problems
 
@@ -116,7 +116,7 @@ The following special vehicles always cause a crash when starting a level:
 * The sandbagged emplacement
 * The pole turret
 
-I've omitted them from the ready-to-use modified vehicle lists for this reason. This is no great loss as it's unlikely they'd be much fun to use.
+I've omitted them from [the ready-to-use modified vehicle lists](how-to-use-special-vehicles.md) for this reason. This is no great loss as it's unlikely they'd be much fun to use.
 
 ### Melee Mode NPCs Cannot Use Most of the Special Vehicles
 
@@ -146,4 +146,4 @@ If copies of the VDFs for the cobra (`vuacobra.vdf`) and emplacement (`vxsandbg.
 
 ![Selection screen fixed: emplacement](images/img-selection-screen-emplacement-fixed.png)
 
-The emplacement VCFs have a similar issue: their names take up all 16 bytes used to store a name in the VCF and don't leave room for a terminating null byte. As shown above, on the selection screen, their names have the start of the VDF name ("vxsa") appended, followed by several apparently random characters.
+The emplacement VCFs have a similar issue: their names take up all 16 bytes used to store a name in the VCF and don't leave room for a terminating null byte. As shown above, on the selection screen their names have the start of the VDF name ("vxsa") appended, followed by several apparently random characters.
