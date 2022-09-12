@@ -2,7 +2,7 @@
 
 Both Interstate '76 and Nitro Pack contain special vehicles that appear in some levels as NPCs but aren't available for use by the player.
 
-![Some of the special vehicles not normally available to the player.](images/img-special-vehicles.png)
+![Special vehicles not normally available to the player.](images/img-glide-special-vehicles.png)
 
 There are three ways the player can use these vehicles:
 1. Create a specially-named variant of the Phaedra Rattler.
