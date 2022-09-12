@@ -23,7 +23,7 @@ I've prepared expanded vehicle lists you can simply copy into the main Nitro Pac
 
 These lists add the following vehicles to the selection list (note that the variants for these vehicles are contained in `nitro.zfs`):
 * [Armadillo](https://en.wikipedia.org/wiki/Armadillo) (1 variant)
-* Tank (3 variants)
+* Tank (2 variants)
 * Hot air balloon (1 variant)
 * [UH-1B Huey helicopter](https://en.wikipedia.org/wiki/Bell_UH-1_Iroquois_variants#UH-1B) (3 variants)
 * [AH-1 Cobra helicopter](https://en.wikipedia.org/wiki/Bell_AH-1_Cobra) (2 variants)
@@ -74,6 +74,12 @@ In melee mode, the game will crash when starting a level if any NPCs are assigne
 * The tractor
 
 Presumably the NPCs that use aircraft and stationary guns in the various scenarios are assigned different AI logic.
+
+### Flying Vehicles Cannot Be Used with Some Scenarios
+
+Some scenarios begin with the player's vehicle in a state (e.g., moving quickly on bumpy terrain) that causes a flying vehicle to immediately collide with the terrain and be destroyed.
+
+Any scenario that includes a cutscene in which the player's vehicle normally stops (apparently accomplished by sustained braking) results in a flying vehicle reversing continuously since flying vehicles have no brakes. This typically results in the player's vehicle leaving the mission area (causing the mission to fail mid-cutscene) or colliding with terrain.
 
 ## More Information
 

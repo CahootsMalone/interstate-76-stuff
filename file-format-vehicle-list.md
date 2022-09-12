@@ -69,7 +69,7 @@ By examining [the VCFs in Nitro Pack's ZFS file](nitro-vcf-list.md), the informa
 Vehicle Name | VCF Base Name | Number of Default Variants
 --- | --- | ---
 [Armadillo](https://en.wikipedia.org/wiki/Armadillo) | vdillo | 1
-Tank | vstank | 3
+Tank | vstank | 2
 Hot-air balloon | vubalon | 1
 [UH-1B Huey](https://en.wikipedia.org/wiki/Bell_UH-1_Iroquois_variants#UH-1B) | vuchuey | 3
 [AH-1 Cobra Helicopte[r]](https://en.wikipedia.org/wiki/Bell_AH-1_Cobra) | vugcobr | 2
@@ -87,7 +87,7 @@ When appended to `nitcar.def`, the following bytes add the remaining vehicles:
 ```
 24 00 00 00 01 00 00 00 01 00 00 00 76 64 69 6C 6C 6F 00 00 00 00 00 00 00 00 00 00 
 
-25 00 00 00 03 00 00 00 03 00 00 00 76 73 74 61 6E 6B 00 00 00 00 00 00 00 00 00 00 
+25 00 00 00 02 00 00 00 02 00 00 00 76 73 74 61 6E 6B 00 00 00 00 00 00 00 00 00 00 
 
 26 00 00 00 01 00 00 00 01 00 00 00 76 75 62 61 6C 6F 6E 00 00 00 00 00 00 00 00 00 
 
