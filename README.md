@@ -4,6 +4,9 @@ Contents:
 * [Simple, step-by-step instructions describing how to run the GOG release of Interstate '76 at 20 frames per second using DxWnd](running-interstate-76-gog-release-using-dxwnd.md)
     * Doing so avoids many bugs that occur when the game runs at a high frame rate.
     * This solution is easy to set up but is limited to software rendering mode.
+* [Simple, step-by-step instructions describing how to run the GOG release of Interstate '76 with hardware acceleraton at 20 frames per second using dgVoodoo](running-interstate-76-gog-release-using-dgvoodoo.md)
+    * dgVoodoo provides wrappers that map the Glide graphics API to modern versions of Direct3D, allowing the game to run in Glide mode with hardware-rendered graphics.
+    * This solution is also easy to set up, but require a little more work than running the game using DxWnd.
 * [List of cheat codes and easter eggs](cheat-codes-and-easter-eggs.md)
 * [How to Use Special Vehicles](how-to-use-special-vehicles.md)
     * How to add special vehicles normally not available to the player to the vehicle selection menu. Includes ready-to-use modified vehicle list files.

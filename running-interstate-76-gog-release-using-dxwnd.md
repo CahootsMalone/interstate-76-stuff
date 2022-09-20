@@ -107,5 +107,3 @@ Note that these steps were performed in version 2.05.61 of DxWnd; they may diffe
 ### Miscellaneous
 
 * DxWnd comes with a target configuration file for Interstate '76 (in the `exports` folder), but it doesn't work with the GOG release.
-
-
