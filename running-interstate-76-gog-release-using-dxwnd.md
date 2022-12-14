@@ -69,7 +69,7 @@ In my experience, 20 frames per second yields the best performance (any frame ra
 ### Limitations
 
 * Full-screen fade effects (e.g., when the "Somewhere in the southwest..." screen fades to black) are slow, but not intolerably so.
-* The game still uses software rendering (texture scaling is performed using nearest-neighbour interpolation). It's possible to enable hardware rendering using a Glide wrapper, but this complicates the setup. Whether or not the increased graphical fidelity justifies the additional complexity is a matter of individual preference. Various approaches are discussed in [the interstate76.com forum](http://forums.interstate76.com/) and [the GOG Interstate '76 forum](https://www.gog.com/forum/interstate_series).
+* The game still uses software rendering (texture scaling is performed using nearest-neighbour interpolation). It's possible to enable hardware rendering using a Glide wrapper, but this complicates the setup. Whether or not the increased graphical fidelity justifies the additional complexity is a matter of individual preference. I've written instructions for setting up hardware acceleration using dgVoodoo 2 [here](running-interstate-76-gog-release-using-dgvoodoo.md). Various similar approaches are also discussed in [the interstate76.com forum](http://forums.interstate76.com/) and [the GOG Interstate '76 forum](https://www.gog.com/forum/interstate_series).
 
 ### Changing the Frame Rate
 
