@@ -145,3 +145,33 @@ Note that only the 3D parts of the game will run in a window because the menus a
 When running the game at a resolution with a 16:9 aspect ratio (e.g., 1920 x 1080), the graphics will be distorted (horizontally stretched, to be specific). Presumably the game's underlying camera transformations assume a 4:3 aspect ratio.
 
 Note that if your graphics hardware displays 4:3 resolutions at a 16:9 aspect ratio, this situation will look roughly the same as the one described in the previous section.
+
+
+
+## Troubleshooting
+
+### General Troubleshooting
+
+If you're unable to run the game using dgVoodoo as described in this document, there are a few general troubleshooting steps that might be worth trying. I describe them in [this comment](https://github.com/CahootsMalone/interstate-76-stuff/issues/1#issuecomment-1565495913).
+
+### Frame Rate isn't Limited
+
+Some people have reported that dgVoodoo's `FPSLimit` setting doesn't consistently reduce the game's frame rate. [GOG forum user Pseudoman shared one possible solution](https://www.gog.com/forum/interstate_series/simple_stepbystep_instructions_for_running_interstate_76_with_hardware_acceleration_using_dgvood/post7): disabling Windows' "fast startup" feature.
+
+To disable fast startup in Windows 10:
+
+* Open the start menu, click the gear icon to open the settings window, click the "System" button, and select "Power & sleep" from the list of categories on the left.
+  * Alternatively, open the start menu, type "power settings", and select "Power & sleep settings".
+* Click "Advanced power settings" on the right (under the "Related settings" heading).
+* Click "Choose what the power buttons do" in the list on the left.
+* Click "Change settings that are currently unavailable".
+* Uncheck the box for "Turn on fast startup".
+* Click the "Save changes" button.
+
+For reference, Microsoft's documentation describes fast startup [here](https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/updates-not-install-with-fast-startup#more-information) as follows:
+
+> The Fast Startup feature in Windows 10 allows your computer [to] start up faster after a shutdown. When you shut down your computer, Fast Startup will put your computer into a hibernation state instead of a full shutdown. Fast Startup is enabled by default if your computer is capable of hibernation.
+
+[This page describing how fast startup can cause hibernation or shutdown to fail](https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/fast-startup-causes-system-hibernation-shutdown-fail#more-information) provides slightly more detail:
+
+> During Fast Startup, the kernel session is not closed, but it is hibernated. Fast Startup is a setting that helps the computer start faster after shutdown. Windows does this by saving the kernel session and device drivers (system information) to the hibernate (hiberfil.sys) file on disk instead of closing it when you shut down the computer.
