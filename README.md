@@ -15,3 +15,4 @@ Contents:
 * [Info about UNZFS](unzfs-info.md)
     * UNZFS can be used to extract and decompress the contents of the `i76.zfs` and `nitro.zfs` files.
 * [Interstate '76 and Nitro Pack Vehicle List File Format](file-format-vehicle-list.md)
+* [Information about terrain textures](terrain-texture-info.md)
