@@ -99,6 +99,7 @@ for texture_dim in TEXTURE_DIMS:
                     draw.text((textX, textY), str(number), font=font, anchor="mm", fill=colour_index_2)
 
     # The bytes from these files need to be manually used to overwrite M16 textures in a PAK file.
+    # It's also necessary to set the colour palette offset for each M16 file (8th byte) to 0 within the PAK file.
     with open(out_path + '.dat', 'wb') as file:
         file.write(image_output.transpose(Image.FLIP_TOP_BOTTOM).tobytes())
 

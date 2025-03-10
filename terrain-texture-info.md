@@ -2,7 +2,7 @@
 
 * Within Interstate '76's `zfs` archive file, there are many different types of files, including:
   * `map`: basic textures consisting of a list of per-pixel indices into the current colour palette.
-  * `m16`: same as `map` files, but with an additional, relatively short section of unknown significance following the palette indices.
+  * `m16`: same as `map` files, but with an additional, relatively short section of unknown significance following the palette indices. Starts with four bytes for width, three bytes for height, and one byte containing an offset into the colour palette that will be added to indices.
   * `vqm`: textures using tile-based compression. Consists of a list of two-byte indices. Each index accounts for a 4x4 pixel area within the texture and points to either a colour within the current palette (which will be used to fill a 4x4 area) or a 4x4 tile within a `cbk` file.
   * `pak`: an uncompressed collection of related files in sequence. Many different types of files are stored within `pak` files, including sets of textures.
   * `pix`: index for a `pak` file. Lists the number of files within the `pak` file and, for each file, its name, offset, and size. Oddly, `pix` files are ASCII plaintext.
