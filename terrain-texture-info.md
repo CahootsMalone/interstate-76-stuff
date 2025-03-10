@@ -24,7 +24,7 @@
   * The first 16x16 texture doesn't appear to be used.
   * I don't know why there are two 64x64 textures; I would've expected a 128x128 texture in place of the first 64x64 texture. Both are used.
 * Terrain textures are mapped to an area covering 64 heightmap tiles.
-* I wrote [a short Python script](../scripts/terrain-texture-generation/generate-interstate-76-map-checkerboard-with-numbers.py) to generate five checkboard textures and replaced the textures in `tp18m6.pak` (except the first, unused 16x16 texture) with them. (This was originally motivated by a desire to better see how the heightmap deforms with distance.) The textures:
+* I wrote [a short Python script](scripts/terrain-texture-generation/generate-interstate-76-map-checkerboard-with-numbers.py) to generate five checkboard textures and replaced the textures in `tp18m6.pak` (except the first, unused 16x16 texture) with them. (This was originally motivated by a desire to better see how the heightmap deforms with distance.) The textures:
     * 256x256:
 
         ![256x256 checkboard](images/terrain-texture-investigation/checkerboard-with-numbers-map-bytes-256-1.png)
